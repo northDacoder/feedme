@@ -37,6 +37,7 @@
               var imageHolder = $("#instafeed");
               console.log($(window));
               var myToken = window.location.hash.split("=");
+              myToken = myToken[1];
               console.log(myToken);
               
               $.ajax({
