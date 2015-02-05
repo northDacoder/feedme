@@ -47,11 +47,10 @@
                   console.log(data[i]);
                   var image = data[i].images.standard_resolution.url;
                   console.log(image);
-                  imageHolder.append(
-                    '<br>' +
-                    '<h1>' + data[i].user.username + '</h1>' +  
-                    '<img src="' + image + '" class="img-thumbnail" />'
-                  );
+                  var htmlString =  '<br>' +
+                                   '<h1>' + data[i].user.username + '</h1>' +  
+                                    '<img src="' + image + '" class="img-thumbnail" />';
+                  imageHolder.append(htmlString);
                   imageHolder.append(data[i]);
                 }
                 
